@@ -1,0 +1,136 @@
+body {
+    background: #cfdef3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e0eafc, #cfdef3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e0eafc, #cfdef3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Raleway', sans-serif;
+}
+
+#container {
+    margin: 1.33%;
+}
+
+h1 {
+    color: steelblue;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#intro {
+    color: steelblue;
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 20px 20px 20px 20px;
+}
+
+/* Forms */
+
+p label {
+    display: inline-block;
+    float: left;
+    width : 150px;
+    color: steelblue;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+input {
+    font-size: 12px;
+    color: darkslategrey;
+    background-color: #f7f7f7;
+    width: 350px;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    border: 3px solid rgba(0,0,0,0);
+}
+
+input:focus {
+    background: #fff;
+    border: 3px solid steelblue;
+    outline: none;
+}
+
+/* Button */
+
+.buttonDiv {
+    text-align:center
+}
+
+#generate {
+    width: 200px;
+    margin-top:20px;
+    margin-left: 10%;
+    position:relative;
+    left: -50px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: steelblue;
+    color: white;
+}
+
+/* Text over image */
+#display{
+    position: relative; /* To help the image + text element to get along with the rest of the page*/
+    display: inline-block; /* Make the width of box same as image */
+    width: 100%;
+    margin-top: 10px;
+}
+
+.item {
+    float: left;
+    position: relative;
+    display: inline-block;
+}
+
+.memeImage {
+    opacity: 1;
+    display: block;
+    position:relative;
+    background-size: 20%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+#display .item .topText {
+    position: absolute; /* To place the text on the image*/
+    text-align: center;
+    color: #fff;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    top: 5%; /* Adjust this value to move the positioned div up and down */
+    font-size: 25px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    z-index: 999; /*text in front of the image*/
+    width: 100%; /* Set the width of the positioned div */
+}
+
+#display .item .bottomText {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    bottom: 5%;
+    font-size: 25px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    z-index: 999;
+    width: 100%;
+}
+
+/* Image hover */
+.memeImg:focus {
+    background: rgba(0,0,0,0.2);
+    outline: 0;
+}
+
+.memeImg:hover {
+    opacity: 0.5;
+}

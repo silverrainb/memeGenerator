@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="container">
+        <h1> Meme Generator </h1>
+        <p id="intro"> Use Image source, text for the top and text for the bottom then click the GENERATE button!</p>
+
+        <form action="" id="memeform">
+            <p class="form">
+                <label>Image URL:
+                    <input type="text" placeholder="Insert URL link for the image" name="imgUrl" required>
+                </label>
+            </p>
+
+            <p class="form">
+                <label>Text on TOP:
+                    <input type="text" placeholder="(optional) This text goes on the top of the image" name="topText">
+                </label>
+            </p>
+
+            <p class="form">
+                <label>Text on Bottom:
+                    <input type="text" placeholder="(optional) This text goes on the top of the image"
+                           name="bottomText">
+                </label>
+            </p>
+
+            <div class="buttonDiv">
+                <input type='button' id="generate" value="GENERATE">
+            </div>
+
+        </form>
+
+    <div id="display">
+    </div>
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
