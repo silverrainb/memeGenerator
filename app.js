@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
         setText();
 
-        // Append everything to ul ============================================
+        // Append to div #display ============================================
         display.appendChild(item)
         function append(){
             item.append(newImg)
